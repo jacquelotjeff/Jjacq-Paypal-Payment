@@ -11,7 +11,7 @@
     }
   ],
   "autoload": {
-    "psr-4": { "PaypalPayment\\":"" }
+    "psr-4": { "Jjacq\\PaypalPayment\\":"" }
   },
   "require": {
     "php": ">=5.5.9"
