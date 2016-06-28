@@ -1,6 +1,6 @@
 <?php
 
-namespace Jjacq\PaypalPaymentBundle\DependencyInjection;
+namespace Jjacq\PaypalPayment\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -17,5 +17,10 @@ class PaypalPaymentExtension extends Extension
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
+
+        $container->setParameter('paypal_payment', $config);
+        $container->setParameter('paypal_payment.paypal_class', $config['paypal_class']);
+        $container->setParameter('paypal_payment.payment_class', $config['payment_class']);
+        $container->setParameter('paypal_payment.auth_class', $config['auth_class']);
     }
 }
