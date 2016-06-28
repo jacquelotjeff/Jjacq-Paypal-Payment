@@ -1,7 +1,8 @@
 # A Paypal Payment Bundle for Symfony
 
 This plugin creates a smart bridge between your website and Paypal.
-You can also define all parameters in your administration page.
+
+You can also define all parameters in your config file.
 
 ## Installation
 
@@ -19,7 +20,7 @@ new Jjacq\PaypalPayment\PaypalPaymentBundle(),
 
 ### Basic configuration
 
-Add this lines in your app/config/config.yml file.
+Add these lines in your app/config/config.yml file.
 
 ```yaml
 paypal_payment:
