@@ -26,3 +26,10 @@ paypal_payment:
     client_id: "your-customer-key"
     client_password: "your-customer-password"
 ```
+### Advanced configuration
+
+TODO
+
+### Basic usage
+
+TODO
