@@ -3,7 +3,7 @@
   "description": "Jjacq Paypal Payment",
   "homepage": "https://github.com/jacquelotjeff/JjacqPaypalPaymentBundle",
   "type": "symfony-bundle",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
     {
       "name": "Jeff Jacquelot",
@@ -18,8 +18,6 @@
   },
   "config": {
     "bin-dir": "bin",
-    "process-timeout":   600,
-    "preferred-install": "dist",
-    "github-protocols":  ["https"]
+    "preferred-install": "dist"
   }
 }
