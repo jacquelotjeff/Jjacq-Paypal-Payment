@@ -69,7 +69,7 @@ class Paypal
         $response = curl_exec($curl);
 
         if (empty($response)) {
-            file_put_contents($errorFile, curl_error($curl), FILE_APPEND);
+            file_put_contents($errorFile, curl_error($curl)."\n\n", FILE_APPEND);
             curl_close($curl);
         } else {
             $info                = curl_getinfo($curl);
