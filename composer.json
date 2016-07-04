@@ -1,0 +1,23 @@
+{
+  "name": "jjacq/paypal-payment",
+  "description": "Jjacq Paypal Payment",
+  "homepage": "https://github.com/jacquelotjeff/JjacqPaypalPaymentBundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jeff Jacquelot",
+      "email": "jacquelotjeff@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "Jjacq\\PaypalPaymentBundle\\":"" }
+  },
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "config": {
+    "bin-dir": "bin",
+    "preferred-install": "dist"
+  }
+}

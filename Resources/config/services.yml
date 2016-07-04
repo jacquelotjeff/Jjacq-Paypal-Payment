@@ -1,0 +1,15 @@
+services:
+    paypal_payment.paypal:
+        class: "%paypal_payment.paypal_class%"
+        arguments:
+            - "%paypal_payment%"
+            - "%kernel.root_dir%"
+
+    paypal_payment.auth:
+        class: "%paypal_payment.auth_class%"
+        arguments:
+            - "@paypal_payment.paypal"
+    paypal_payment.payment:
+        class: "%paypal_payment.payment_class%"
+        arguments:
+            - "@paypal_payment.auth"
