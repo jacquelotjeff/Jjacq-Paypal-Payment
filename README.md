@@ -19,7 +19,7 @@ composer require jjacq/paypal-payment
 ### Add this line in your AppKernel
 
 ```php
-new Jjacq\PaypalPayment\PaypalPaymentBundle(),
+new Jjacq\PaypalPaymentBundle\PaypalPaymentBundle(),
 ```
 
 ### Minimum configuration
