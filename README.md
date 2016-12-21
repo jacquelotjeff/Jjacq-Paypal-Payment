@@ -44,9 +44,9 @@ paypal_payment:
     mode: "live" # Default is 'sandbox'
     verbose_mode: true # Default is false /!\ Not efficient in live mode
     log_dir: "/var/logs/paypal_payments/"
-    paypal_class: "Jjacq\PaypalPayment\Paypal\Paypal"
-    auth_class: "Jjacq\PaypalPayment\Paypal\Auth"
-    payment_class: "Jjacq\PaypalPayment\Paypal\Payment"
+    paypal_class: "Jjacq\PaypalPaymentBundle\Paypal\Paypal"
+    auth_class: "Jjacq\PaypalPaymentBundle\Paypal\Auth"
+    payment_class: "Jjacq\PaypalPaymentBundle\Paypal\Payment"
 ```
 ### Basic usage
 
